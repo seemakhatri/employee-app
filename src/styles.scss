@@ -1,1 +1,27 @@
-/* You can add global styles to this file, and also import other style files */
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+/* ✅ Add Tailwind directives FIRST */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* ✅ Ensure @layer base is properly defined */
+@layer base {
+  body {
+    font-family: sans-serif;
+  }
+}
+
+/* Custom styles */
+.custom-bottom-sheet .mat-bottom-sheet-container {
+  @apply rounded-t-xl shadow-lg p-4;
+}
+
+
+@media (prefers-color-scheme: dark) {
+    .dark\:text-red-400 {
+        --tw-text-opacity: 1;
+        color: rgb(248 113 113 / var(--tw-text-opacity, 1));
+    }
+}
