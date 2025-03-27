@@ -39,8 +39,7 @@
             </div>
           </div>
 
-          
-          
+
 
         <div id="date-range-picker" date-rangepicker class="flex items-center pt-2 pb-2">
             <div class="relative">
@@ -52,7 +51,7 @@
                     </svg>
 
                 </div>
-                <input id="datepicker-range-start" name="start" type="text"
+                <input id="datepicker-range-start" name="start" type="text"  [(ngModel)]="employee.startDate"
                     class="bg-white border border-gray-300 text-gray-900 text-sm rounded-sm focus:ring-blue-500 focus:border-blue-500 block w-full ps-12 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-700"
                     placeholder="Today">
             </div>
@@ -80,6 +79,8 @@
                     placeholder="No Date">
             </div>
         </div>
+
+        
 
 
 

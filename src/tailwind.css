@@ -2,6 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+@import "tailwindcss";
+@import "flowbite";
+
+
+@source "../node_modules/flowbite-datepicker";
+
+
 body {
     overflow: hidden;
   }
